@@ -17,4 +17,4 @@ My modifications:
 
 *  Changed the colors to a dark theme.
 *  Removed the dice roll animation to speed up the game.
-*  Disable sound effects.
+*  Disabled sound effects.
