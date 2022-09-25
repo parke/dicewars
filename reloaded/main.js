@@ -847,14 +847,18 @@ function com_to(){
 
 function start_battle(){
 	var i,j;
-	
+
+        /*  20220911  by parke
+        //  don't hide bottom banner during combat.
 	spr[sn_btn+4].visible = false;	// END TURNボタン消す
 	spr[sn_ban].visible = false;
 	for( i=0; i<8; i++ ){
 		spr[sn_player+i].visible = false;
 	}
+	*/
 
-	// 戦闘シーンの変数	
+	//  戦闘シーンの変数
+	//  battle scene variables
 	var an = [game.area_from,game.area_to];
 	for( i=0; i<2; i++ ){
 		battle[i].arm = game.adat[an[i]].arm;
@@ -874,7 +878,9 @@ function start_battle(){
 			battle[i].fin[j] = false;
 		}
 	}
-	spr[sn_battle].visible = true;
+
+        //  20220911  don't show the battle(?) sprite
+	//  spr[sn_battle].visible = true;
 	
 	for( i=0; i<2; i++ ){
 		var w = 4;
@@ -916,6 +922,11 @@ function start_battle(){
 }
 
 function battle_dice(){
+
+        //  20220825  skip to after_battle
+        timer_func = after_battle
+        return;
+
 	var i,j;
 	var w = (bturn==0)?-10:10;
 	var h = (bturn==0)?6:-6;
@@ -1038,7 +1049,8 @@ function after_battle(){
 }
 
 ////////////////////////////////////////////////////
-// ダイス補充の開始
+//  ダイス補充の開始
+//  start dice replenishment
 ////////////////////////////////////////////////////
 
 function start_supply(){
@@ -1116,7 +1128,8 @@ function supply_dice(){
 
 
 ////////////////////////////////////////////////////
-// 次のプレイヤーへ
+//  次のプレイヤーへ
+//  to the next player
 ////////////////////////////////////////////////////
 
 function next_player(){
@@ -1227,7 +1240,8 @@ function win(){
 }
 
 ////////////////////////////////////////////////////
-// 履歴
+//  履歴
+//  history
 ////////////////////////////////////////////////////
 
 function start_history(){
@@ -1249,7 +1263,8 @@ function start_history(){
 		draw_areadice(sn_dice+i,prio[i].an);
 	}
 	
-	// ボタン
+	//  ボタン
+	//  button
 	spr[sn_btn+5].x = view_w/2 - resize(100);
 	spr[sn_btn+5].y = view_h*0.88;
 	spr[sn_btn+5].visible = true;
@@ -1334,7 +1349,8 @@ function play_history(){
 }
 
 ////////////////////////////////////////////////////
-// リンク
+//  リンク
+//  link
 ////////////////////////////////////////////////////
 
 function toppage(){
