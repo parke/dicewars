@@ -661,9 +661,13 @@ function draw_player_data(){
 		spr[sn].x = ox;//-22*nume/deno;
 		spr[sn].y = ypos_arm;
 		spr[sn].getChildAt(0).gotoAndStop("d"+p+"0");
+	        //  Use lighter color for numbers.
+	        spr[sn].getChildAt(1).color = "#606060";
 		spr[sn].getChildAt(1).text = ""+game.player[p].area_tc;
 		spr[sn].getChildAt(2).text = "";
 		if( game.player[p].stock>0 ) spr[sn].getChildAt(2).text = ""+game.player[p].stock;
+	        //  Use lighter color for numbers.
+	        if( game.player[p].stock>0 ) spr[sn].getChildAt(2).color = "#606060";
 		if( i==game.ban ){
 			spr[sn_ban].x = ox;
 			spr[sn_ban].y = ypos_arm;
