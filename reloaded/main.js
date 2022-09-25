@@ -75,7 +75,7 @@ var bturn = 0;	// バトル用ターン
 var replay_c=0;
 
 // サウンド関係
-var soundon = true;
+var soundon = false;
 var manifest = [
 	{"src":"./sound/button.wav",	"id":"snd_button"},
 	{"src":"./sound/clear.wav",		"id":"snd_clear"},
