@@ -24,7 +24,7 @@ The original DICEWARS game is copyright by gamedesign.jp.
 *  Dice Wars is a radical simplification of the board game Risk.
 *  Dice Wars offers a quick yet satisfying tactical challenge.
 *  Maps are randomly generated so every game is unique.
-*  Dice Wars has a nice balance of randomness versus predictability.
+*  Dice Wars nicely blends randomness versus predictability.
 *  Due to the randomness, when playing Dice Wars, you must make strategic risk manegement decisions.
 *  You will win by keeping the computer players in balance until you can sieze a decisive advantage.
 
