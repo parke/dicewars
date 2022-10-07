@@ -26,7 +26,7 @@ The original DICEWARS game is copyright by gamedesign.jp.
 *  Maps are randomly generated so every game is unique.
 *  Dice Wars nicely blends randomness versus predictability.
 *  Due to the randomness, when playing Dice Wars, you must make strategic risk manegement decisions.
-*  You will win by keeping the computer players in balance until you can sieze a decisive advantage.
+*  You will win by keeping the computer players in balance until you can seize a decisive advantage.
 
 ###  Understand your income
 
