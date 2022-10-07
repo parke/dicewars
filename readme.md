@@ -85,7 +85,7 @@ dominant player.  As with Phase One, only "level" or "downhill"
 attacks will happen.  Even in Phase Two, no computer player will ever
 attack "uphill".
 
-####  That's it!
+###  That's it!
 
 There may be a few more subtleties to how the computer players move,
 but the above outline should enable you to learn to play well.
