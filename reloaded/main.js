@@ -852,9 +852,10 @@ function com_to(){
 function start_battle(){
 	var i,j;
 
+	spr[sn_btn+4].visible = false;	// END TURNボタン消す
+	
         /*  20220911  by parke
         //  don't hide bottom banner during combat.
-	spr[sn_btn+4].visible = false;	// END TURNボタン消す
 	spr[sn_ban].visible = false;
 	for( i=0; i<8; i++ ){
 		spr[sn_player+i].visible = false;
